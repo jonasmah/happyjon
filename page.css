@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;  
+  background-color: #f1f1f1;
+}
+
+.content{
+  background-image: url("pic/starship.jpg");
+}
+
+header{
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0 0px 0;
+}
+
+h2 a{
+  font-size: 48px;
+  color: black;
+  text-decoration: none;
+}
+
+h2 a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+h3 a{
+  color: black;
+  text-decoration: none;
+}
+
+.pic{
+  margin: 0 auto 10px auto;
+  width: 65%;
+}
+
+.row{
+  margin: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 50px 50px 20px 50px;
+   margin: 20px 0 30px 0;
+}
+
+.card p{
+  font-size: 18px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  width: 10%;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 600px){
+  .topnav a {float:none;}
+}
+
+/* Style the footer */
+.footer {
+  background-color: #C6C4C4;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*social media button*/
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  /*margin: 5px 2px;*/
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/*.fa-youtube {
+  background: #bb0000;
+  color: white;
+}*/
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+.followme{
+  display: inline-block;
+}
+
+footer{
+  margin: 30px 0 10px 0;
+}
